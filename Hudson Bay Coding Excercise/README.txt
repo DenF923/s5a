@@ -1,3 +1,6 @@
+Dennis Fung
+DenF923@gmail.com
+
 Github Repository URL: https://github.com/DenF923/s5a.git
 
 
