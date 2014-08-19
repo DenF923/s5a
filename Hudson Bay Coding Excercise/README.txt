@@ -79,3 +79,6 @@ Code Review:
               or as an HTTP response. So instead, this method should not return "void", but instead,
               should return "String" to allow flexibility on how this data can be outputted.
 13. ServiceProduct has not been implemented.
+14. Please see the following fixed classes:
+          com/s5a/interview/ProductController.java
+          com/s5a/interview/ServiceProduct.java

@@ -16,9 +16,7 @@ public class ProductController {
     
     public ProductController(String brandName) {
     	serviceProduct = new ServiceProduct();
-    	Product product = new Product(brandName);
-    	serviceProduct.add(product);
-    	currentProduct = product;
+    	addProduct(brandName);
     }
 
     public String showProduct() {
@@ -26,12 +24,12 @@ public class ProductController {
     }
 
     public boolean addProduct(String brandName) {
-    	Product product = new Product(brandName);
-        return serviceProduct.add(product);
+    	currentProduct = new Product(brandName);
+        return serviceProduct.add(currentProduct);
     }
 
     public String formattedBrandName() {
-        return ("Current product: " + currentProduct.getBrandName());
+        return "Current product: " + currentProduct.getBrandName();
     }
 
 }
