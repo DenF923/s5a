@@ -1,3 +1,6 @@
+Github Repository URL: https://github.com/DenF923/s5a.git
+
+
 ============
 Exercise 1
 ============
@@ -14,7 +17,6 @@ Please see the following files:
 
 com/sample/dao/UserService.java
 com/sample/dao/userServiceTest.java
-
 
 
 
