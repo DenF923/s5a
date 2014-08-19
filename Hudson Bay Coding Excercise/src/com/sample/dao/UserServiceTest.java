@@ -89,4 +89,19 @@ public class UserServiceTest {
 		assertArrayEquals(sortedUsers, actualList);
 	}
 
+	@Test
+	public void testEmptySort() {
+		String[] actualList = us.getSortedUsersList();
+		String[] expectedList = new String[0];
+		
+		assertArrayEquals(expectedList, actualList);
+	}
+	
+	@Test
+	public void testNullSort() {
+		us.createUser(null);
+		String[] actualList = us.getSortedUsersList();
+		String[] expectedList = {null};
+		assertArrayEquals(expectedList, actualList);
+	}
 }
